@@ -41,6 +41,7 @@ $padding: 16px;
         padding: 1em 1.5em;
         display: block;
         word-wrap: break-word;
+        padding: $padding;
         .before {
           float: left;
           width: 40%
@@ -80,31 +81,31 @@ $padding: 16px;
     margin-bottom: 0;
   }
 
-&message {
+%message {
   border: 1px solid #ccc;
   padding: 10px;
   color: #2748B3;
   background-color: #000;
-  width: 100%
+  width: 100%;
 }
 
   .message {
-    @extend &message;
+    @extend %message;
   }
 
   .success {
     background-color: green;
-    @extend &message;
+    @extend %message;
   }
 
   .error {
     background-color: red;
-    @extend &message;
+    @extend %message;
   }
 
   .warning {
     background-color: orange;
-    @extend &message;
+    @extend %message;
   }
 
 .red {
@@ -115,4 +116,11 @@ $padding: 16px;
 .blue {
   background-color: blue;
   margin-left: 15px;
+}
+article {
+  display: flex;
+  flex-wrap: wrap;
+  section {
+
+  }
 }

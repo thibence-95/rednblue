@@ -98,3 +98,12 @@ h6 {
 .warning {
   background-color: orange
 }
+.red {
+  background-color: red;
+  margin-left: 15px;
+}
+
+.blue {
+  background-color: blue;
+  margin-left: 15px;
+}
